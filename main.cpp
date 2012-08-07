@@ -1,11 +1,12 @@
 #include <QtGui/QApplication>
 #include "mainwindow.h"
+#include <Qdebug.h>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-    
+    qDebug()<<"dd";
     return a.exec();
 }
